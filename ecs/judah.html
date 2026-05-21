@@ -1,7 +1,6 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html class="homePage">
 <head>
-	<!-- This is a comment! Text here will be ignored by the browser. -->
 	<meta charset="UTF-8">
 	<title>Judah's Portfolio</title>
 	<link href="myCSS.css" rel="stylesheet" type="text/css">
@@ -11,12 +10,73 @@
   <div class="header">
   	<h1>Judah's Portfolio</h1>
   </div>
+  
   <div class="nav">
-    <h3> <a href="index.html">Home</a> | <a href="ecs/index.html">ECS</a> | <a href="football/index.html">ECS</a>Football</h3>
+  	<h3> 
+  		<a href="index.html">Home</a> | 
+  		<a href="ecs/index.html">ECS</a> | 
+  		<a href="football/index.html">Football</a>
+  	</h3>
   </div>
-  <div class="content">Hello World!</div>
+  
+  <div class="content">
+  	<h2>My Projects</h2>
+  	<p>Welcome to my portfolio! Below are some of the programming projects I have developed, demonstrating Object-Oriented Programming (OOP) concepts and interactive design.</p>
+  	
+  	<hr>
+
+  	<div class="project" style="margin-bottom: 40px;">
+  		<h2>1. TankGame</h2>
+  		<p><strong>OOP Implementation & Logic:</strong></p>
+  		<p>
+  			TankGame is a 2D top-down game built using Object-Oriented Programming principles. It utilizes a core <code>Tank</code> class to instantiate the player's object, tracking dynamic <strong>instance variables</strong> like <code>health</code> (initialized at 100) and positional coordinates. 
+  			The game loop handles intense <strong>game logic</strong>, managing user interaction via keyboard inputs for movement while handling collision detection. 
+  			An <code>ArrayList</code> is used to dynamically manage active <code>Bomb</code> objects spawning on the screen. 
+  			<strong>Encapsulation</strong> ensures that vital stats like player health are protected and modified safely using specialized methods when a collision with an obstacle or a bomb occurs.
+  		</p>
+  		<div class="project-images">
+  			<img src="TankGame.png" alt="TankGame Screenshot" width="400" style="border: 1px solid #ccc; margin: 10px 0;">
+  		</div>
+  		<p><a href="https://github.com/yourusername/TankGame" target="_blank">View TankGame Repository on GitHub</a></p>
+  	</div>
+
+  	<hr>
+
+  	<div class="project" style="margin-bottom: 40px;">
+  		<h2>2. Goomba Dodge & Score</h2>
+  		<p><strong>OOP Implementation & Logic:</strong></p>
+  		<p>
+  			This interactive game leverages <strong>inheritance</strong> and custom classes to drive its core mechanics. The central character inherits behavior from a generic <code>Sprite</code> superclass, allowing it to reuse basic movement methods while extending unique properties. 
+  			<strong>User interaction</strong> captures movement to navigate the environment. 
+  			The program features an active scoring system updated via <strong>methods</strong> whenever a target is successfully interacted with. The visual state highlights custom graphics rendered dynamically onto a solid blue background canvas array.
+  		</p>
+  		<div class="project-images">
+  			<img src="GoombaGame.png" alt="Goomba Game Screenshot" width="400" style="border: 1px solid #ccc; margin: 10px 0;">
+  		</div>
+  		<p><a href="https://github.com/yourusername/GoombaGame" target="_blank">View Goomba Game Repository on GitHub</a></p>
+  	</div>
+
+  	<hr>
+
+  	<div class="project" style="margin-bottom: 40px;">
+  		<h2>3. Digital Etch-A-Sketch & UI Color Palette</h2>
+  		<p><strong>OOP Implementation & Logic:</strong></p>
+  		<p>
+  			This project focuses heavily on user interface design, utilizing a digital hardware simulation combined with a hex color palette manager. 
+  			The system uses <strong>arrays</strong> to store preset hex values (such as <code>#007DEB</code> and <code>#1800EB</code>) which are fed into a constructor to dynamically generate color selection blocks. 
+  			Through <strong>polymorphism</code>, various UI component classes respond differently to click events, allowing seamless color switching or screen clearing, mimicking the classic mechanics of an interactive Etch-A-Sketch drawing board.
+  		</p>
+  		<div class="project-images" style="display: flex; gap: 10px;">
+  			<img src="Etch.jpg" alt="Etch A Sketch Interface" width="300" style="border: 1px solid #ccc;">
+  			<img src="ColorPalette.png" alt="Color Palette UI" width="400" style="border: 1px solid #ccc;">
+  		</div>
+  		<p><a href="https://github.com/yourusername/EtchColorProject" target="_blank">View Color Project Repository on GitHub</a></p>
+  	</div>
+
+  </div>
+  
   <div class="footer">
-    <h4>"aboutme.html">About Me</a> | Contact | Copyright 2026</h4>
+  	<h4><a href="aboutme.html">About Me</a> | Contact | Copyright 2026</h4>
   </div>
 </div>
 </body>
