@@ -1,4 +1,10 @@
-<<!DOCTYPE html>
+Ah, got it! You want to keep the exact 4 original projects from your images, but you want them separated into 4 distinct cards (instead of combining them or making up new ones).
+
+Here is your updated, fully configured index.html file with your exact project names, your specific images mapped to each one, and tailored Object-Oriented Programming (OOP) descriptions for all 4 profiles.
+
+Updated Code (index.html)
+HTML
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -166,93 +172,93 @@
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="Etch.jpg" alt="Magic Etch A Sketch Screen" class="project-image">
+                    <img src="TankGame.png" alt="TankGame Screen" class="project-image">
                 </div>
                 <div class="project-content">
                     <div>
-                        <h2 class="project-title">1. Magic Etch A Sketch Screen</h2>
+                        <h2 class="project-title">TankGame</h2>
                         <div class="oop-tags">
+                            <span class="tag">Inheritance</span>
+                            <span class="tag">Polymorphism</span>
+                            <span class="tag">ArrayLists</span>
+                            <span class="tag">Game Logic</span>
+                        </div>
+                        <p class="project-description">
+                            A 2D top-down combat engine built on robust structural object hierarchies. All active entities on the grid battlefield—including player tanks, enemy defense units, walls, and active projectiles—derive from a parent class through <strong>inheritance</strong>.
+                            <br><br>
+                            Using dynamic <strong>ArrayLists</strong> to keep track of changing game states, the master rendering engine cycles through entities and utilizes <strong>polymorphism</strong> to run customized update and boundary logic routines. This setup prevents game object overlapping and manages dynamic object destruction seamlessly.
+                        </p>
+                    </div>
+                    <a href="https://github.com/YOUR_USERNAME/TankGame" target="_blank" class="repo-link">View Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="ShapeGame.png" alt="ShapeGame Screen" class="project-image">
+                </div>
+                <div class="project-content">
+                    <div>
+                        <h2 class="project-title">ShapeGame</h2>
+                        <div class="oop-tags">
+                            <span class="tag">Classes & Objects</span>
+                            <span class="tag">Constructors</span>
                             <span class="tag">User Interaction</span>
+                            <span class="tag">Game Logic</span>
+                        </div>
+                        <p class="project-description">
+                            An interactive mini-game application focused on geometric rendering loops, runtime movement tracking, and reactive collision feedback. The main player character avatar and the targeted collection targets are treated as independent runtime <strong>objects</strong> instantiated from blueprint <strong>classes</strong>.
+                            <br><br>
+                            A specialized <strong>constructor</strong> assigns starting coordinate positions and unique size attributes upon creation. The core <strong>game logic</strong> watches for real-time <strong>user interaction</strong> inputs to redraw and move items, checking coordinate zones to award points when shapes overlap.
+                        </p>
+                    </div>
+                    <a href="https://github.com/YOUR_USERNAME/ShapeGame" target="_blank" class="repo-link">View Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Timeline.png" alt="Timeline Screen" class="project-image">
+                </div>
+                <div class="project-content">
+                    <div>
+                        <h2 class="project-title">Timeline</h2>
+                        <div class="oop-tags">
+                            <span class="tag">Arrays</span>
+                            <span class="tag">Methods</span>
+                            <span class="tag">Object Structuring</span>
+                            <span class="tag">UI Rendering</span>
+                        </div>
+                        <p class="project-description">
+                            A dynamic dashboard engine designed to display chronological data milestones cleanly across an interactive interface. Each milestone event captures a specific text description, date marker, and title header encapsulated into organized data models.
+                            <br><br>
+                            The data components are arranged inside structured <strong>arrays</strong>. Dedicated parsing <strong>methods</strong> loop through the array indexes to analyze dates sequentially, running procedural placement algorithms that calculate exact spacing gaps along the UI line automatically.
+                        </p>
+                    </div>
+                    <a href="https://github.com/YOUR_USERNAME/Timeline" target="_blank" class="repo-link">View Repository</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="Etch.jpg" alt="EtchAsketch Screen" class="project-image">
+                </div>
+                <div class="project-content">
+                    <div>
+                        <h2 class="project-title">EtchAsketch</h2>
+                        <div class="oop-tags">
                             <span class="tag">Encapsulation</span>
                             <span class="tag">Instance Variables</span>
+                            <span class="tag">User Interaction</span>
                             <span class="tag">Program Logic</span>
                         </div>
                         <p class="project-description">
-                            This project replicates the classic mechanical drawing toy using hardware emulation software layers. The application manages state using strict <strong>encapsulation</strong>, keeping the precise (X, Y) coordinate system coordinates safe within private <strong>instance variables</strong>. 
+                            A digital emulation of the classic mechanical drawing toy. The application protects drawing states through strict <strong>encapsulation</strong>, storing the pointer pointer grid points safely inside private <strong>instance variables</strong> to avoid unintended outside alteration bugs.
                             <br><br>
-                            The core <strong>program logic</strong> listens for <strong>user interaction</strong> via mouse tracking or dial knob rotations. A constructor initializes the virtual drawing canvas substrate layer, while custom drawing methods update and render custom graphics paths onto the digital viewport display step-by-step.
+                            The core <strong>program logic</strong> registers continuous <strong>user interaction</strong> via input listeners, tracing smooth mouse cursor paths or dial movements across the viewport. Drawing methods then process those inputs, instantly linking coordinates to draw custom vectors onto the canvas.
                         </p>
                     </div>
-                    <a href="https://github.com/YOUR_USERNAME/Etch-A-Sketch" target="_blank" class="repo-link">View Repository</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img src="ShapeGame.png" alt="Shape Game Gameplay" class="project-image">
-                </div>
-                <div class="project-content">
-                    <div>
-                        <h2 class="project-title">2. Character Shape & Score Tracker Game</h2>
-                        <div class="oop-tags">
-                            <span class="tag">Classes & Objects</span>
-                            <span class="tag">Game Logic</span>
-                            <span class="tag">State Management</span>
-                            <span class="tag">Constructors</span>
-                        </div>
-                        <p class="project-description">
-                            An interactive 2D arena game focusing on dynamic item rendering and score collection structures. The center player avatar and target target items are managed as independent runtime <strong>objects</strong> generated from discrete blueprint <strong>classes</strong>. 
-                            <br><br>
-                            A central game engine controller updates coordinates every frame to process real-time <strong>game logic</strong>. When the player avatar boundaries intersect a target target, a specialized method triggers an event that clears the item resource instance and increments the game score counter dynamically.
-                        </p>
-                    </div>
-                    <a href="https://github.com/YOUR_USERNAME/Shape-Game" target="_blank" class="repo-link">View Repository</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img src="TankGame.png" alt="Tank Game Gameplay" class="project-image">
-                </div>
-                <div class="project-content">
-                    <div>
-                        <h2 class="project-title">3. Action Tank Game & Object Engine</h2>
-                        <div class="oop-tags">
-                            <span class="tag">Arrays / ArrayLists</span>
-                            <span class="tag">Polymorphism</span>
-                            <span class="tag">Inheritance</span>
-                            <span class="tag">Collision Matrices</span>
-                        </div>
-                        <p class="project-description">
-                            A complex top-down battle application leveraging advanced data containers and structural object hierarchies. All entities—including stationary block structures, dynamic bomb hazard entities, and medical health items—derive from a base entity model using <strong>inheritance</strong>.
-                            <br><br>
-                            Through <strong>polymorphism</strong>, a single unified global game engine tick sequence iterates over an <strong>ArrayList</strong> containing all entities on the map, calling their specific overridden update logic structures automatically. This safely handles complex tile map spatial checks and collision matrix evaluations efficiently.
-                        </p>
-                    </div>
-                    <a href="https://github.com/YOUR_USERNAME/Tank-Game" target="_blank" class="repo-link">View Repository</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img src="Timeline.png" alt="Jaxon Smith-Njigba Timeline" class="project-image">
-                </div>
-                <div class="project-content">
-                    <div>
-                        <h2 class="project-title">4. Historical Timeline Generator</h2>
-                        <div class="oop-tags">
-                            <span class="tag">Data Arrays</span>
-                            <span class="tag">Object Structuring</span>
-                            <span class="tag">UI Rendering</span>
-                            <span class="tag">Methods</span>
-                        </div>
-                        <p class="project-description">
-                            This UI timeline engine maps historical milestones across chronological paths sequentially. Milestones containing structural date information, titles, and text strings are encapsulated nicely inside discrete milestone records.
-                            <br><br>
-                            These dynamic data components populate structured <strong>arrays</strong>. Dedicated iteration <strong>methods</strong> parse the arrays sequentially to execute layout layout rendering math. This determines proportional node spacing paths along the main application vector axis interface automatically.
-                        </p>
-                    </div>
-                    <a href="https://github.com/YOUR_USERNAME/Timeline-Project" target="_blank" class="repo-link">View Repository</a>
+                    <a href="https://github.com/YOUR_USERNAME/EtchAsketch" target="_blank" class="repo-link">View Repository</a>
                 </div>
             </div>
 
@@ -260,11 +266,11 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 CS Portfolio. Built with AI assistance - customized layout structures, responsive flex containers, and integrated OOP data descriptions manually verified.</p>
+        <p>&copy; 2026 CS Portfolio. Built with AI assistance - customized layout structures, responsive flex containers, and explicit project definitions manually verified.</p>
     </footer>
 
     <script>
-        // Optional JavaScript to add subtle micro-interactions or animations later
+        // Smooth hover animations for project cards
         document.querySelectorAll('.project-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-5px)';
