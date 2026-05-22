@@ -1,9 +1,3 @@
-Ah, got it! You want to keep the exact 4 original projects from your images, but you want them separated into 4 distinct cards (instead of combining them or making up new ones).
-
-Here is your updated, fully configured index.html file with your exact project names, your specific images mapped to each one, and tailored Object-Oriented Programming (OOP) descriptions for all 4 profiles.
-
-Updated Code (index.html)
-HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,6 +105,7 @@ HTML
             margin-top: 0;
             font-size: 1.6rem;
             color: var(--accent-color);
+            text-transform: none; /* Preserves exact casing requested */
         }
 
         .project-description {
@@ -172,21 +167,21 @@ HTML
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="TankGame.png" alt="TankGame Screen" class="project-image">
+                    <img src="TankGame.png" alt="tankgame Screen" class="project-image">
                 </div>
                 <div class="project-content">
                     <div>
-                        <h2 class="project-title">TankGame</h2>
+                        <h2 class="project-title">tankgame</h2>
                         <div class="oop-tags">
-                            <span class="tag">Inheritance</span>
-                            <span class="tag">Polymorphism</span>
-                            <span class="tag">ArrayLists</span>
+                            <span class="tag">User Interaction</span>
                             <span class="tag">Game Logic</span>
+                            <span class="tag">ArrayLists</span>
+                            <span class="tag">Methods</span>
                         </div>
                         <p class="project-description">
-                            A 2D top-down combat engine built on robust structural object hierarchies. All active entities on the grid battlefield—including player tanks, enemy defense units, walls, and active projectiles—derive from a parent class through <strong>inheritance</strong>.
+                            An action game focused on defensive grid combat. The application processes continuous <strong>user interaction</strong> by listening for WASD keyboard inputs to handle character movement and mouse clicks to shoot projectiles. 
                             <br><br>
-                            Using dynamic <strong>ArrayLists</strong> to keep track of changing game states, the master rendering engine cycles through entities and utilizes <strong>polymorphism</strong> to run customized update and boundary logic routines. This setup prevents game object overlapping and manages dynamic object destruction seamlessly.
+                            The core <strong>game logic</strong> manages multiple active bomb threats using a dynamic <strong>ArrayList</strong> structure. Dedicated collision detection <strong>methods</strong> evaluate coordinate overlaps whenever a shot fires, removing the bomb objects from memory and updating the map view instantly upon destruction.
                         </p>
                     </div>
                     <a href="https://github.com/YOUR_USERNAME/TankGame" target="_blank" class="repo-link">View Repository</a>
@@ -195,21 +190,21 @@ HTML
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="ShapeGame.png" alt="ShapeGame Screen" class="project-image">
+                    <img src="ShapeGame.png" alt="shapegame Screen" class="project-image">
                 </div>
                 <div class="project-content">
                     <div>
-                        <h2 class="project-title">ShapeGame</h2>
+                        <h2 class="project-title">shapegame</h2>
                         <div class="oop-tags">
                             <span class="tag">Classes & Objects</span>
                             <span class="tag">Constructors</span>
-                            <span class="tag">User Interaction</span>
-                            <span class="tag">Game Logic</span>
+                            <span class="tag">Instance Variables</span>
+                            <span class="tag">Program Logic</span>
                         </div>
                         <p class="project-description">
-                            An interactive mini-game application focused on geometric rendering loops, runtime movement tracking, and reactive collision feedback. The main player character avatar and the targeted collection targets are treated as independent runtime <strong>objects</strong> instantiated from blueprint <strong>classes</strong>.
+                            An arena collection game utilizing structured entity tracking. The player avatar and collectible drink items are tracked as independent running <strong>objects</strong> produced from blueprint <strong>classes</strong>. 
                             <br><br>
-                            A specialized <strong>constructor</strong> assigns starting coordinate positions and unique size attributes upon creation. The core <strong>game logic</strong> watches for real-time <strong>user interaction</strong> inputs to redraw and move items, checking coordinate zones to award points when shapes overlap.
+                            An initialization <strong>constructor</strong> sets up starting spatial coordinates, which are safely updated inside internal <strong>instance variables</strong>. The <strong>program logic</strong> checks the player's position relative to the drink item; when they collide, the player drinks it, scoring counter values increment, and the item regenerates elsewhere.
                         </p>
                     </div>
                     <a href="https://github.com/YOUR_USERNAME/ShapeGame" target="_blank" class="repo-link">View Repository</a>
@@ -218,21 +213,21 @@ HTML
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="Timeline.png" alt="Timeline Screen" class="project-image">
+                    <img src="Timeline.png" alt="a timeline Screen" class="project-image">
                 </div>
                 <div class="project-content">
                     <div>
-                        <h2 class="project-title">Timeline</h2>
+                        <h2 class="project-title">a timeline</h2>
                         <div class="oop-tags">
                             <span class="tag">Arrays</span>
-                            <span class="tag">Methods</span>
                             <span class="tag">Object Structuring</span>
+                            <span class="tag">Encapsulation</span>
                             <span class="tag">UI Rendering</span>
                         </div>
                         <p class="project-description">
-                            A dynamic dashboard engine designed to display chronological data milestones cleanly across an interactive interface. Each milestone event captures a specific text description, date marker, and title header encapsulated into organized data models.
+                            A visualization application tracking the career highlights and milestones of a professional football player. Every historical event—including draft years, notable games, and award dates—is grouped into clean data records via <strong>object structuring</strong>.
                             <br><br>
-                            The data components are arranged inside structured <strong>arrays</strong>. Dedicated parsing <strong>methods</strong> loop through the array indexes to analyze dates sequentially, running procedural placement algorithms that calculate exact spacing gaps along the UI line automatically.
+                            These structured milestone items are stored within predictable data <strong>arrays</strong>. Through proper <strong>encapsulation</strong>, the details of each milestone are kept secure, while structural rendering functions read the array index order sequentially to properly position information across the display.
                         </p>
                     </div>
                     <a href="https://github.com/YOUR_USERNAME/Timeline" target="_blank" class="repo-link">View Repository</a>
@@ -241,21 +236,21 @@ HTML
 
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="Etch.jpg" alt="EtchAsketch Screen" class="project-image">
+                    <img src="Etch.jpg" alt="a etchasketch Screen" class="project-image">
                 </div>
                 <div class="project-content">
                     <div>
-                        <h2 class="project-title">EtchAsketch</h2>
+                        <h2 class="project-title">a etchasketch</h2>
                         <div class="oop-tags">
-                            <span class="tag">Encapsulation</span>
-                            <span class="tag">Instance Variables</span>
                             <span class="tag">User Interaction</span>
+                            <span class="tag">Instance Variables</span>
                             <span class="tag">Program Logic</span>
+                            <span class="tag">Methods</span>
                         </div>
                         <p class="project-description">
-                            A digital emulation of the classic mechanical drawing toy. The application protects drawing states through strict <strong>encapsulation</strong>, storing the pointer pointer grid points safely inside private <strong>instance variables</strong> to avoid unintended outside alteration bugs.
+                            A classic drawing board emulation that renders custom shapes onto a virtual grid interface. The system captures <strong>user interaction</strong> by monitoring arrow key inputs to control drawing movements across the layout canvas.
                             <br><br>
-                            The core <strong>program logic</strong> registers continuous <strong>user interaction</strong> via input listeners, tracing smooth mouse cursor paths or dial movements across the viewport. Drawing methods then process those inputs, instantly linking coordinates to draw custom vectors onto the canvas.
+                            The current horizontal and vertical pencil locations are constantly held inside mutable private <strong>instance variables</strong>. The system's underlying <strong>program logic</strong> passes these coordinates into line rendering <strong>methods</strong>, creating vector graphics shapes step-by-step based on your keystrokes.
                         </p>
                     </div>
                     <a href="https://github.com/YOUR_USERNAME/EtchAsketch" target="_blank" class="repo-link">View Repository</a>
@@ -266,7 +261,7 @@ HTML
     </div>
 
     <footer>
-        <p>&copy; 2026 CS Portfolio. Built with AI assistance - customized layout structures, responsive flex containers, and explicit project definitions manually verified.</p>
+        <p>&copy; 2026 CS Portfolio. Built with AI assistance - customized layout structures, updated descriptive parameters, and explicit project definitions manually verified.</p>
     </footer>
 
     <script>
@@ -284,3 +279,4 @@ HTML
     </script>
 </body>
 </html>
+
